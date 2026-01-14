@@ -1,73 +1,64 @@
-# Welcome to your Lovable project
+# TASK-2: Web Application Vulnerability Scanner
 
-## Project info
+A modern web-based tool to identify common vulnerabilities in web applications.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🔍 Overview
 
-## How can I edit this code?
+This vulnerability scanner helps identify common security vulnerabilities in web applications, including:
 
-There are several ways of editing your application.
+- **SQL Injection** - Detection of SQL injection vulnerabilities in forms and URL parameters
+- **Cross-Site Scripting (XSS)** - Identification of reflected and stored XSS vulnerabilities
+- **Cross-Site Request Forgery (CSRF)** - Detection of missing CSRF protection
+- **Security Headers** - Analysis of missing or misconfigured security headers
+- **Sensitive Data Exposure** - Detection of exposed sensitive information
+- **Insecure Direct Object References (IDOR)** - Identification of access control issues
 
-**Use Lovable**
+## 🚀 Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- Clean, intuitive web interface
+- Real-time scanning progress visualization
+- Detailed vulnerability reports with severity ratings
+- Remediation recommendations
+- Export scan results
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Technology Stack
 
-**Use your preferred IDE**
+**Frontend (This Repository):**
+- React 18 with TypeScript
+- Tailwind CSS for styling
+- Shadcn/UI components
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Backend Scanner (Python-based):**
+For the actual scanning functionality, you would integrate with a Python backend using:
+- `requests` - HTTP library for making web requests
+- `beautifulsoup4` - HTML parsing and analysis
+- `re` - Regular expressions for pattern matching
+- `urllib` - URL parsing utilities
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📦 Installation
 
-Follow these steps:
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/web-vulnerability-scanner.git
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Navigate to project directory
+cd web-vulnerability-scanner
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🔒 Disclaimer
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This tool is intended for educational purposes and authorized security testing only. Always obtain proper authorization before scanning any web application. Unauthorized scanning of systems you don't own or have permission to test is illegal.
 
-**Use GitHub Codespaces**
+## 📄 License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+MIT License - See LICENSE file for details
 
-## What technologies are used for this project?
+## 🤝 Contributing
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Contributions are welcome! Please feel free to submit a Pull Request.
